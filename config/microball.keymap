@@ -51,7 +51,7 @@
             label = "TO_LAYER_0";
         };
 
-         mkp_exit_AML: mkp_exit_AML {
+        mkp_exit_AML: mkp_exit_AML {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
@@ -66,11 +66,11 @@
             label = "MKP_EXIT_AML";
         };
 
-            parenthesis: parenthesis {
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings = <&kp LANG_HANJA &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
-                label = "parenthesis";
+        parenthesis: parenthesis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG_HANJA &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            label = "parenthesis";
         };
     };
 
@@ -84,11 +84,13 @@
             tapping-term-ms = <200>;
         };
 
-    scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             // 追加: スクロールのタップ時間を設定 (20ms)
+
             tap-ms = <20>;
         };
     };
@@ -139,10 +141,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                         &to_layer_0 Y  &to_layer_0 U  &kp LC(V)  &to_layer_0 N0  &trans
-&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &trans      &kp LC(W)  &to_layer_0 H  &mkp MB1       &mkp MB3   &mkp MB2        &trans
-&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B  &trans      &kp LC(T)  &to_layer_0 N  &mkp MB4       &kp LC(C)  &mkp MB5        &trans
-&trans         &trans         &trans         &trans         &trans         &trans      &trans     &trans                                                   &trans
+&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                         &to_layer_0 Y  &to_layer_0 U      &kp LC(V)          &to_layer_0 N0     &trans
+&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &trans      &kp LC(W)  &to_layer_0 H  &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &trans
+&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B  &trans      &kp LC(T)  &to_layer_0 N  &mkp MB4           &kp LC(C)          &mkp MB5           &trans
+&trans         &trans         &trans         &trans         &trans         &trans      &trans     &trans                                                                  &trans
             >;
         };
 
