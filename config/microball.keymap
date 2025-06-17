@@ -130,10 +130,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp LS(END)                             &trans    &kp LS(LG(LEFT_ARROW))  &kp UP    &kp LG(LS(RIGHT))   &trans
-&kp LC(A)       &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(HOME)  &trans            &trans  &kp HOME  &kp LEFT                &kp DOWN  &kp RIGHT           &kp END
-&kp LEFT_SHIFT  &kp LC(X)        &kp LC(C)       &kp LC(V)        &kp TAB       &kp LEFT_ALT      &trans  &trans    &kp LG(UP_ARROW)        &trans    &kp LG(DOWN_ARROW)  &kp LC(Z)
-&kp LCTRL       &trans           &kp LEFT_ALT    &trans           &trans        &trans            &trans  &trans                                                          &trans
+&kp ESCAPE      &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp LS(END)                             &trans    &kp LS(LG(LEFT_ARROW))  &kp UP      &kp LG(LS(RIGHT))   &trans
+&kp LC(A)       &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(HOME)  &trans            &trans  &kp HOME  &kp LEFT                &kp DOWN    &kp RIGHT           &kp END
+&kp LEFT_SHIFT  &kp LC(X)        &kp LC(C)       &kp LC(V)        &kp TAB       &kp LEFT_ALT      &trans  &trans    &trans                  &kp LG(UP)  &kp LG(DOWN_ARROW)  &kp LC(Z)
+&kp LCTRL       &trans           &kp LEFT_ALT    &trans           &trans        &trans            &trans  &trans                                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -141,10 +141,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                             &to_layer_0 Y  &to_layer_0 U      &kp LC(C)          &to_layer_0 N0     &trans
-&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &trans      &kp LC(W)      &to_layer_0 H  &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &trans
-&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B  &trans      &kp LC(LS(T))  &to_layer_0 N  &mkp MB4           &kp LC(V)          &mkp MB5           &trans
-&trans         &trans         &trans         &trans         &trans         &trans      &trans         &trans                                                                  &trans
+&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                             &to_layer_0 Y  &to_layer_0 U      &kp LC(C)          &to_layer_0 O       &trans
+&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &trans      &kp LC(W)      &to_layer_0 H  &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2   &trans
+&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B  &trans      &kp LC(LS(T))  &to_layer_0 N  &to_layer_0 M      &kp LC(V)          &to_layer_0 PERIOD  &trans
+&trans         &trans         &trans         &trans         &trans         &trans      &trans         &trans                                                                   &trans
             >;
         };
 
