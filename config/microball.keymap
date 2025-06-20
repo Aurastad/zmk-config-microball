@@ -37,9 +37,9 @@
             key-positions = <20 21>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        default_ESC {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
         };
     };
 
@@ -130,10 +130,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp LS(END)                             &trans    &kp LS(LG(LEFT_ARROW))  &kp UP      &kp LG(LS(RIGHT))   &trans
-&kp LC(A)       &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(HOME)  &trans            &trans  &kp HOME  &kp LEFT                &kp DOWN    &kp RIGHT           &kp END
-&kp LEFT_SHIFT  &kp LC(X)        &kp LC(C)       &kp LC(V)        &kp TAB       &kp LEFT_ALT      &trans  &trans    &trans                  &kp LG(UP)  &kp LG(DOWN_ARROW)  &kp LC(Z)
-&kp LCTRL       &trans           &kp LEFT_ALT    &trans           &trans        &trans            &trans  &trans                                                            &trans
+&kp ESCAPE      &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp LS(END)                        &trans    &kp LS(LG(LEFT_ARROW))  &kp UP      &kp LG(LS(RIGHT))   &trans
+&kp LC(A)       &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(HOME)  &trans       &trans  &kp HOME  &kp LEFT                &kp DOWN    &kp RIGHT           &kp END
+&kp LEFT_SHIFT  &kp LC(X)        &kp LC(C)       &kp LC(V)        &kp LC(B)     &kp TAB      &trans  &trans    &trans                  &kp LG(UP)  &kp LG(DOWN_ARROW)  &kp LC(Z)
+&kp LCTRL       &trans           &kp LEFT_ALT    &trans           &trans        &trans       &trans  &trans                                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
