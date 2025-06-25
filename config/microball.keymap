@@ -32,14 +32,39 @@
             key-positions = <11 10>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
         default_ESC {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
+        };
+
+        m1 {
+            bindings = <&kp LC(LA(NUMBER_1))>;
+            key-positions = <18 19>;
+        };
+
+        m2 {
+            bindings = <&kp LA(LC(NUMBER_2))>;
+            key-positions = <19 20>;
+        };
+
+        m3 {
+            bindings = <&kp LA(LC(NUMBER_3))>;
+            key-positions = <30 31>;
+        };
+
+        m4 {
+            bindings = <&kp LA(LC(NUMBER_4))>;
+            key-positions = <31 32>;
+        };
+
+        m5 {
+            bindings = <&kp LA(LC(N5))>;
+            key-positions = <18 19 20>;
+        };
+
+        m0 {
+            bindings = <&kp LC(LA(N0))>;
+            key-positions = <20 21>;
         };
     };
 
