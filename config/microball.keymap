@@ -116,7 +116,7 @@
 
             // 追加: スクロールのタップ時間を設定 (20ms)
 
-            tap-ms = <20>;
+            tap-ms = <30>;
         };
     };
 
@@ -131,7 +131,6 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 LANG2  &lt 1 SPACE  &lt 3 LANG1      &mt DEL BACKSPACE  &lt 2 ENTER                             &kp TAB
             >;
 
-            sensor-bindings = <&scroll_up_down>;
             sensor-bindings = <&scroll_up_down>;
         };
 
