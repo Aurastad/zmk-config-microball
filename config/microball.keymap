@@ -73,7 +73,7 @@
         };
 
         toward {
-            bindings = <&kp LA(LEFT_ARROW)>;
+            bindings = <&kp LA(RIGHT_ARROW)>;
             key-positions = <25 24>;
         };
     };
