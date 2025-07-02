@@ -1,8 +1,8 @@
+#include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <input/processors.dtsi>
 
 #define MOUSE 4
 #define SCROLL 5
@@ -14,9 +14,7 @@
     quick-tap-ms = <0>;
 };
 
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 4 10000>;
-};
+&mkp_input_listener { input-processors = <&zip_temp_layer 4 10000>; };
 
 / {
     combos {
@@ -178,10 +176,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 ESCAPE  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                             &to_layer_0 Y  &to_layer_0 U      &kp LC(C)  &to_layer_0 O       &trans
-&to_layer_0 A       &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &trans      &kp LC(W)      &to_layer_0 H  &mkp_exit_AML MB1  &trans     &mkp_exit_AML MB2   &trans
-&kp LEFT_SHIFT      &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B  &trans      &kp LC(LS(T))  &to_layer_0 N  &to_layer_0 M      &kp LC(V)  &to_layer_0 PERIOD  &trans
-&kp LCTRL           &trans         &trans         &trans         &trans         &trans      &trans         &trans                                                           &trans
+&to_layer_0 ESCAPE  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                             &to_layer_0 Y  &to_layer_0 U  &kp LC(C)  &to_layer_0 O       &trans
+&to_layer_0 A       &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &trans      &kp LC(W)      &to_layer_0 H  &mkp MB1       &trans     &mkp MB2            &trans
+&kp LEFT_SHIFT      &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B  &trans      &kp LC(LS(T))  &to_layer_0 N  &to_layer_0 M  &kp LC(V)  &to_layer_0 PERIOD  &trans
+&kp LCTRL           &trans         &trans         &trans         &trans         &trans      &trans         &trans                                                       &trans
             >;
         };
 
