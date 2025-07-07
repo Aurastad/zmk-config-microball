@@ -61,7 +61,7 @@
         };
 
         m5 {
-            bindings = <&kp LA(LC(N5))>;
+            bindings = <&tog 3>;
             key-positions = <18 19 20>;
         };
 
@@ -78,6 +78,11 @@
         toward {
             bindings = <&kp LA(RIGHT_ARROW)>;
             key-positions = <25 24>;
+        };
+
+        stepback {
+            bindings = <&kp LC(Z)>;
+            key-positions = <2 1>;
         };
     };
 
@@ -176,10 +181,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 ESCAPE  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                             &to_layer_0 Y  &to_layer_0 U  &kp LC(C)  &to_layer_0 O       &trans
-&to_layer_0 A       &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &trans      &kp LC(W)      &to_layer_0 H  &mkp MB1       &trans     &mkp MB2            &trans
-&kp LEFT_SHIFT      &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B  &trans      &kp LC(LS(T))  &to_layer_0 N  &to_layer_0 M  &kp LC(V)  &to_layer_0 PERIOD  &trans
-&kp LCTRL           &trans         &trans         &trans         &trans         &trans      &trans         &trans                                                       &trans
+&to_layer_0 ESCAPE  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                             &to_layer_0 Y  &to_layer_0 U  &to_layer_0 I  &to_layer_0 O       &trans
+&to_layer_0 A       &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &trans      &kp LC(W)      &to_layer_0 H  &mkp MB1       &to_layer_0 K  &mkp MB2            &kp LC(C)
+&mt LEFT_SHIFT Z    &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B  &trans      &kp LC(LS(T))  &to_layer_0 N  &to_layer_0 M  &kp LC(V)      &to_layer_0 PERIOD  &trans
+&kp LCTRL           &trans         &trans         &trans         &trans         &trans      &trans         &trans                                                           &trans
             >;
         };
 
