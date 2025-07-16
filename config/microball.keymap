@@ -59,7 +59,7 @@
         };
 
         m5 {
-            bindings = <&tog 3>;
+            bindings = <&tog 4>;
             key-positions = <18 19 20>;
         };
 
@@ -102,7 +102,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&sl 4>;
+                <&sl 5>;
 
             label = "MKP_EXIT_AML";
         };
@@ -144,7 +144,7 @@
 &kp Q             &kp W         &kp E         &kp R        &kp T                                              &kp Y        &kp U  &lt 5 I    &kp O    &lt 5 P
 &kp A             &kp S         &kp D         &kp F        &kp G        &kp LS(LG(S))      &kp EQUAL          &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B        &kp TAB            &kp B              &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 LANG2  &lt 1 SPACE  &lt 3 LANG1        &mt DEL BACKSPACE  &lt 2 ENTER                             &kp TAB
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 LANG2  &lt 1 SPACE  &lt 4 LANG1        &mt DEL BACKSPACE  &lt 2 ENTER                             &kp TAB
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -170,17 +170,17 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp LS(END)                        &trans    &kp LS(LG(LEFT_ARROW))  &kp UP      &kp LG(LS(RIGHT))  &trans
-&kp LC(A)       &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(HOME)  &trans       &trans  &kp HOME  &kp LEFT                &kp DOWN    &kp RIGHT          &kp END
-&kp LEFT_SHIFT  &kp LC(X)        &kp LC(C)       &kp LC(V)        &kp LC(B)     &kp TAB      &trans  &trans    &kp LS(LC(LEFT_ARROW))  &kp LG(UP)  &kp LC(LS(RIGHT))  &kp LC(Z)
-&kp LCTRL       &trans           &kp LEFT_ALT    &trans           &trans        &trans       &trans  &trans                                                           &trans
+&kp ESCAPE      &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp LS(END)                        &kp LC(LS(UP_ARROW))  &kp LS(LG(LEFT_ARROW))  &kp UP      &kp LG(LS(RIGHT))  &trans
+&kp LC(A)       &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(HOME)  &trans       &trans  &kp HOME              &kp LEFT                &kp DOWN    &kp RIGHT          &kp END
+&kp LEFT_SHIFT  &kp LC(X)        &kp LC(C)       &kp LC(V)        &kp LC(B)     &kp TAB      &trans  &kp LC(LS(DOWN))      &kp LS(LC(LEFT_ARROW))  &kp LG(UP)  &kp LC(LS(RIGHT))  &kp LC(Z)
+&kp LCTRL       &trans           &kp LEFT_ALT    &trans           &trans        &trans       &trans  &trans                                                                       &trans
             >;
         };
 
         MOUSE {
             bindings = <
-&to_layer_0 ESCAPE  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                             &to_layer_0 Y  &to_layer_0 U      &to_layer_0 I  &to_layer_0 O       &trans
-&to_layer_0 A       &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &trans      &kp LC(W)      &to_layer_0 H  &mkp_exit_AML MB1  &to_layer_0 K  &mkp_exit_AML MB2   &kp LC(C)
+&to_layer_0 ESCAPE  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                             &to_layer_0 Y  &to_layer_0 U      &to_layer_0 I  &to_layer_0 O       &kp LC(W)
+&to_layer_0 A       &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &trans      &trans         &to_layer_0 H  &mkp_exit_AML MB1  &to_layer_0 K  &mkp_exit_AML MB2   &kp LC(C)
 &mt LEFT_SHIFT Z    &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B  &trans      &kp LC(LS(T))  &to_layer_0 N  &to_layer_0 M      &kp LC(V)      &to_layer_0 PERIOD  &trans
 &kp LCTRL           &trans         &trans         &trans         &trans         &trans      &trans         &trans                                                               &trans
             >;
